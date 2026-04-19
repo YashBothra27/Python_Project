@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced Calculator</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #0f0f1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    gap: 20px;
+}
+
+.history-panel {
+    width: 220px;
+    height: 420px;
+    overflow-y: auto;
+    background: #151525;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 13px;
+}
+
+.calculator {
+    background: #1a1a2b;
+    padding: 20px;
+    border-radius: 20px;
+    width: 340px;
+}
+
+.display {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: right;
+    background: black;
+    color: white;
+    overflow-x: auto;
+}
+
+.result-box {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #101020;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    background: #202033;
+    color: #dcdcdc;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2e2e4d;
+}
+
+.operator { color: #f5c16c; }
+.equal { background: #8c6b2f; }
+.clear { color: #ff5c5c; }
+
+</style>
+</head>
+
+<body>
+
+<div class="history-panel">
+    <strong>History:</strong><br>
+    {% for item in history %}
+        {{ item }}<br>
+    {% endfor %}
+</div>
+
+<div class="calculator">
+<form method="POST" onsubmit="return validateInput()">
+
+<input class="display" type="text" name="expression"
+       value="{{ expression or '' }}" required>
+
+{% if result is not none %}
+<div class="result-box">
+    <strong>Result:</strong> {{ result }}
+</div>
+{% endif %}
+
+<div class="buttons">
+
+<button type="button" onclick="add('sqrt(')">√</button>
+<button type="button" onclick="add('sin(')">sin</button>
+<button type="button" onclick="add('cos(')">cos</button>
+<button type="button" onclick="add('tan(')">tan</button>
+
+<button type="button" onclick="add('log(')">log</button>
+<button type="button" onclick="add('log10(')">log10</button>
+<button type="button" onclick="add('^')" class="operator">^</button>
+<button type="button" onclick="add('fact(')">fact</button>
+
+<button type="button" onclick="add('pi')">π</button>
+<button type="button" onclick="add('e')">e</button>
+<button type="button" onclick="add('(')">(</button>
+<button type="button" onclick="add(')')">)</button>
+
+<button type="button" class="clear" onclick="clearDisplay()">C</button>
+<button type="button" onclick="backspace()">⌫</button>
+<button type="button" class="operator" onclick="add('%')">%</button>
+<button type="button" class="operator" onclick="add('/')">÷</button>
+
+<button type="button" onclick="add('7')">7</button>
+<button type="button" onclick="add('8')">8</button>
+<button type="button" onclick="add('9')">9</button>
+<button type="button" class="operator" onclick="add('*')">×</button>
+
+<button type="button" onclick="add('4')">4</button>
+<button type="button" onclick="add('5')">5</button>
+<button type="button" onclick="add('6')">6</button>
+<button type="button" class="operator" onclick="add('-')">−</button>
+
+<button type="button" onclick="add('1')">1</button>
+<button type="button" onclick="add('2')">2</button>
+<button type="button" onclick="add('3')">3</button>
+<button type="button" class="operator" onclick="add('+')">+</button>
+
+<button type="button" onclick="add('0')">0</button>
+<button type="button" onclick="add('.')">.</button>
+<button type="submit" class="equal">=</button>
+
+</div>
+</form>
+</div>
+
+<script>
+function add(value) {
+    let display = document.querySelector('.display');
+    display.value += value;
+}
+
+function clearDisplay() {
+    document.querySelector('.display').value = '';
+}
+
+function backspace() {
+    let display = document.querySelector('.display');
+    display.value = display.value.substring(0, display.value.length - 1);
+}
+
+function validateInput() {
+    let value = document.querySelector('.display').value;
+    if (value.trim() === "") {
+        alert("Enter something!");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</body>
+</html>
