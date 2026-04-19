@@ -1,28 +1,115 @@
-PROJECT OVERVIEW :-
-This project is an Exploratory Data Analysis (EDA) of a comprehensive dataset detailing global video game sales. The goal is to uncover key trends, identify peak periods for game releases and sales revenue, and analyze the performance of different genres and platforms over time.
+# 🎮 Video Game Sales Data Analysis
 
+An Exploratory Data Analysis (EDA) project focused on uncovering trends and insights from global video game sales data.
 
-TOOLS/LIBRARIES USED :-
-~ Python(numpy) for Numerical Computing and basic mathematical operations.
-~ Python(Pandas) for Data cleaning and data manipulation.
-~ Python(Matplotlib) for statics and visualizations in diffent factors using the data.
+This project analyzes how game sales vary across **years, genres, and platforms**, and identifies patterns in the gaming industry over time.
 
+---
 
-DATASET :-
-the dataset used for the EDA is exported from kaggle.
-source: https://www.kaggle.com/datasets/migeruj/videogames-predictive-model
+## 📊 Project Overview
 
+The goal of this project is to:
 
-DETAILED EXPLAINATION:-
-The analysis phase of the project provides valuable insights through basic statistics and detailed pivot tables.
-1. Importing modules:
-   Imported the required python modules(numpy,pandas,matplot) for EDA
-2. Data Manipulation and cleaning:
-   Importing the data as dataframe.
-   Dropped the irrelevant columns,removed the missing values.
-   sorted the dataframe yearwise,
-   performed basic statistical and mathematical operations.
-3. Data visualizations:
-   Performed data visualizations after arranging and cleaning data and get meaningful insights.
-4. Pivot tables:
-   Created Pivot tables for detailed understanding of dataset and derive information.
+* Analyze global video game sales trends
+* Identify peak years for game releases and revenue
+* Compare performance across different genres and platforms
+* Generate insights using data visualization techniques
+
+---
+
+## 📂 Dataset
+
+* Source: Kaggle
+* Dataset: Video Game Sales Data
+* Link: https://www.kaggle.com/datasets/migeruj/videogames-predictive-model
+
+---
+
+## 🛠️ Tech Stack
+
+* **Python**
+* **Pandas** → Data cleaning & manipulation
+* **NumPy** → Numerical operations
+* **Matplotlib** → Data visualization
+
+---
+
+## ⚙️ Workflow
+
+### 1. Data Loading
+
+* Imported dataset into a Pandas DataFrame
+* Loaded required libraries
+
+### 2. Data Cleaning
+
+* Removed missing values
+* Dropped irrelevant columns
+* Sorted data by year
+
+### 3. Data Analysis
+
+* Performed statistical analysis
+* Explored trends across years, genres, and platforms
+
+### 4. Data Visualization
+
+* Created graphs to represent:
+
+  * Sales trends over time
+  * Genre-wise performance
+  * Platform comparisons
+
+### 5. Pivot Tables
+
+* Built pivot tables for deeper insights
+* Enabled multi-dimensional analysis
+
+---
+
+## 📈 Key Insights
+
+* Identified peak years for video game sales
+* Observed dominant genres in different periods
+* Analyzed platform popularity trends
+* Discovered patterns in global sales distribution
+
+---
+
+## 📁 Project Structure
+
+```text
+VideoGameAnalysis/
+│
+├── videogame.ipynb   # Main analysis notebook
+├── vdogame.csv       # Dataset
+└── README.md         # Project documentation
+```
+
+---
+
+## 🎯 Skills Demonstrated
+
+* Data Cleaning & Preprocessing
+* Exploratory Data Analysis (EDA)
+* Data Visualization
+* Analytical Thinking
+* Working with real-world datasets
+
+---
+
+## 🚀 Future Improvements
+
+* Add interactive visualizations (Plotly/Seaborn)
+* Build predictive models for sales forecasting
+* Deploy analysis as a dashboard
+
+---
+
+## 👨‍💻 Author
+
+**Yash Kumar Bothra**
+
+---
+
+⭐ If you found this project useful, feel free to explore and give it a star!
