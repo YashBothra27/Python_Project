@@ -82,7 +82,7 @@ The goal of this project is to:
 VideoGameAnalysis/
 │
 ├── videogame.ipynb   # Main analysis notebook
-├── vdogame.csv       # Dataset
+├── vgsales.csv       # Dataset
 └── README.md         # Project documentation
 ```
 
