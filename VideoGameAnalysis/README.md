@@ -98,14 +98,6 @@ VideoGameAnalysis/
 
 ---
 
-## 🚀 Future Improvements
-
-* Add interactive visualizations (Plotly/Seaborn)
-* Build predictive models for sales forecasting
-* Deploy analysis as a dashboard
-
----
-
 ## 👨‍💻 Author
 
 **Yash Kumar Bothra**

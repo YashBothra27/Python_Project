@@ -1,24 +1,26 @@
 # 🐍 Python Projects Portfolio
 
 A curated collection of projects showcasing practical applications of Python in **Data Science, Machine Learning, and Web Development**.
-
 This repository highlights hands-on work, problem-solving ability, and real-world project implementation.
 
 ---
 
-## 📂 Repository Structure
+### 📂 Repository Structure
 
 ```text
 Python_Project/
 │
 ├── 🎮 VideoGameAnalysis/
 │   ├── Data analysis on video game dataset
-│   ├── Includes CSV data, preprocessing, and insights
-|
+│   ├── Includes preprocessing and insights
+│
 ├── 🧮 calculator/
 │   ├── Flask-based scientific calculator web app
-│   ├── Includes backend logic, UI, and history tracking
+│   ├── Backend + UI + history tracking
 │
+├── 🛒 EcommerceAnalysis/
+│   ├── E-commerce data analysis & ML project
+│   ├── Includes EDA, insights, and prediction models
 │
 └── (More projects coming soon...)
 ```
@@ -27,15 +29,26 @@ Python_Project/
 
 ## 🚀 Projects
 
+### 🎮 Video Game Data Analysis
+
+A data analysis project focused on extracting insights from video game datasets.
+**Key Highlights:**
+* Data cleaning and preprocessing
+* Exploratory Data Analysis (EDA)
+* Trend identification and visualization
+
+**Tech Stack:**
+Python, Pandas, NumPy, Matplotlib
+
+---
+
 ### 🧮 Calculator Web App
 
-A modern scientific calculator built using **Flask** with a clean user interface and advanced mathematical capabilities.
+A modern scientific calculator built using **Flask** with a clean user interface and advanced features.
 
 **Key Features:**
-
 * Scientific operations (sin, cos, log, sqrt)
-* Power operations using `^`
-* Constants (π, e)
+* Power operations and constants (π, e)
 * Input validation and error handling
 * Calculation history tracking
 
@@ -44,45 +57,47 @@ Python, Flask, HTML, CSS, JavaScript
 
 ---
 
-### 🎮 Video Game Data Analysis
+### 🛒 E-Commerce Business Analytics & Return Prediction
 
-A data analysis project focused on extracting insights from video game datasets.
-
-**Key Highlights:**
-
-* Data cleaning and preprocessing
+A comprehensive data science project analyzing e-commerce data and building machine learning models.
+**Key Features:**
 * Exploratory Data Analysis (EDA)
-* Trend identification and insights
+* Revenue and sales insights
+* Return prediction using Random Forest
+* Price prediction using Linear Regression
+* Business-driven insights and recommendations
 
 **Tech Stack:**
-Python, Pandas, NumPy, Matplotlib
+Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
 
 ---
 
-## 🛠️ Skills Demonstrated
+### 🛠️ Skills Demonstrated
 
 * Data Analysis & Visualization
+* Machine Learning (Regression & Classification)
 * Backend Development with Flask
-* Problem Solving & Algorithmic Thinking
 * Data Cleaning & Preprocessing
+* Feature Engineering & Model Evaluation
 * Building End-to-End Projects
 
 ---
 
-## 🎯 Purpose
+### 🎯 Purpose
 
 This repository serves as a **portfolio of projects** demonstrating:
 
 * Practical implementation of Python concepts
-* Ability to build complete applications
-* Experience working with real-world data
+* Ability to solve real-world problems
+* Experience with data-driven decision making
+* Development of complete applications
 
 ---
 
-## 👨‍💻 Author
+### 👨‍💻 Author
 
 **Yash Kumar Bothra**
 
 ---
 
-⭐ If you find this work interesting, feel free to explore the projects!
+⭐ Feel free to explore the projects and provide feedback!
